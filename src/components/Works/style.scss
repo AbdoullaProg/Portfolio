@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+$text-color-black: #273036;
+$text-color-blue: #0066FF;
+$text-color-darkBlue: #000b76;
+
+.works{
+    width: 100%;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20rem;
+    background-color: rgba(0, 0, 0, 0.027);
+    & .title{
+      color: $text-color-black;
+      font-size: 2rem;
+      text-align: center;
+      font-weight: 550;
+      text-transform: uppercase;
+      margin-bottom: 3rem;
+      & span{
+        color: $text-color-blue;
+      }
+    }
+    & .container-work{
+      width: 70%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 2rem;
+      flex-wrap: wrap;
+      row-gap: 2rem;
+      & .work{
+        padding: 3rem;
+        // background-color: $text-color-blue;
+        background-color: red;
+        min-height: 400px;
+        min-width: 500px;
+        color: white;
+        border-radius: 5px;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        & .infos-container{
+          display: flex;
+          width: 100%;
+          justify-content:  center;
+          column-gap: 10px;
+          margin-bottom: 1rem;
+          & .infos{
+            display: block;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0.316);
+            font-size: 1rem;
+            font-weight: 300;
+          }
+        }
+        & .container-advent{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          & .title{
+            color: white;
+            font-size: 1.5rem;
+          }
+          & .text{
+            font-size: 1rem;
+            text-align: center;
+            line-height: 120%;
+          }
+        }
+        & .btn-container{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          & .btn{
+            border: none;
+            padding: 0.5rem 3rem;
+            background-color:  $text-color-blue;
+            border: 1px solid white;
+            color: white;
+            font-family: 'Poppins';
+            text-decoration: none;
+            cursor: pointer;
+            transition: 0.3s;
+            border-radius: 5px  ;
+            &:hover{
+              transform: scale(1.05);
+            }
+          }
+        }
+      }
+      // & .nature{
+      //   background-color: #3EC300;
+      //   & .infos-container{
+      //     & .infos{
+      //       text-shadow: 1px 1px 1px gray;
+
+      //     }
+      //   }
+      //   & .container-advent{
+      //     & .title{
+      //       text-shadow: 1px 1px 1px gray;
+      //     }
+      //     & .text{
+      //       text-shadow: 1px 1px 1px gray;
+
+      //     }
+      //   }
+      //   & .btn-container{
+      //     & .btn{
+      //       text-shadow: 1px 1px 1px gray;
+      //       background-color: #3EC300;
+      //     }
+      //   }
+      // }
+      // & .fun{
+      //   background-color: #FFDD4A;
+      //   & .infos-container{
+      //     & .infos{
+      //       text-shadow: 1px 1px 1px gray;
+
+      //     }
+      //   }
+      //   & .container-advent{
+      //     & .title{
+      //       text-shadow: 1px 1px 1px gray;
+      //     }
+      //     & .text{
+      //       text-shadow: 1px 1px 1px gray;
+
+      //     }
+      //   }
+      //   & .btn-container{
+      //     & .btn{
+      //       text-shadow: 1px 1px 1px gray;
+      //       background-color: #FFDD4A;
+      //     }
+      //   }
+      // }
+    }
+}

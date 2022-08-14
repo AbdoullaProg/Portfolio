@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+.container-project{
+    margin-top: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    // align-items: center;
+    & .header-project{
+      margin-top: 10rem;
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      & .infos-container{
+        display: flex;
+        column-gap: 10px;
+        margin-bottom: 3rem;
+        & .info{
+          border: 1px solid #0066FF;
+          padding: 0.3rem 1rem;
+          border-radius: 15px;
+          color: #0066FF;
+          display: block;
+        }
+      }
+      & > .title{
+        font-size: 4rem;
+        font-weight: 500;
+        line-height: 0.5;
+        margin-bottom: 3rem;
+      }
+      & .tech-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        & .tech{
+          display: flex;
+          flex-direction: column;
+          & .title{
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+          }
+          & .text{
+            color: gray;
+          }
+        }
+      }
+      & .img-header{
+        background-color: lightblue;
+        height: 300px;
+        border-radius: 5px;
+        width: 100%;
+        margin-top: 3rem;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 6rem;
+        text-shadow: 3px 3px 3px gray;
+        font-weight: bold;
+      }
+    }
+  
+    & .main-project{
+      width: 70%;
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      row-gap: 4em;
+      margin-top: 4rem;
+      font-size: 1rem;
+      & .description-container{
+        display: flex;
+        width: 100%;
+        align-items: flex-start;
+        box-sizing: border-box;
+        border-radius: 3px;
+        & .title{
+          width: 30%;
+          font-weight: 500;
+          font-size: 1.5rem;
+          color: #000b76;
+        }
+        & .text{
+          width: 70%;
+          color: gray;
+          line-height: 150%;
+        }
+      }
+    }
+    & .carousel-container{
+      margin-top: 5rem;
+      background-color: #0066ff0a;
+      width: 100%;
+      margin-bottom: 20rem;
+      // border: 1px solid red;
+  
+      display: flex;
+      flex-direction: column;
+      padding: 3rem 0;
+      & .container-text{
+        width: 70%;
+        margin: auto;
+        // display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        & .title{
+          font-weight: 500;
+          font-size: 1.5rem;
+          margin-bottom: 2rem;
+          text-align: center;
+        }
+        & .text{
+          font-size: 1rem;
+          line-height: 1;
+          text-align: center;
+        }
+      }
+      & .carousel-imgs{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        margin-top: 4rem;
+        column-gap: 5px;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        & > img{
+            width: 70%;
+            border-radius: 8px;
+            box-shadow: 0px 1px 4px gray;
+            height: 100%;
+        }
+      }
+      & .btn-container{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 5rem;
+        column-gap: 20px;
+        & .btn{
+          width: 60px;
+          height: 60px;
+          border: none;
+          border-radius: 50%;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          & img{
+            width: 20px;
+            height: 20px;
+          }
+          &:nth-child(1){
+            background-color: #fff;
+            transform: rotate(180deg);
+          }
+          &:nth-child(2){
+            background-color: #0066FF;
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,140 @@
+$text-color-black: #273036;
+$text-color-blue: #0066FF;
+$text-color-darkBlue: #000b76;
+
+.skills{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(252, 252, 252);
+    // padding: 3rem 0;
+    padding: 4rem 0;
+    & > .img{
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background: white;
+      padding: 1rem;
+      border-radius: 50%;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      background-size: 70px;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 1;
+    }
+    & .img-react{
+      left: 10%;
+      top: 60%;
+      background-image: url('../../assets/images/physics.png');
+    }
+    & .img-redux{
+      right: 10%;
+      top: 40%;
+      background-image: url('../../assets/images/redux-seeklogo.com.svg');
+    }
+    & .img-firebase{
+      left: 20%;
+      top: 10%;
+      background-size: 50px;
+      background-image: url('../../assets/images/firebase-seeklogo.com.svg');
+    }
+    & .img-nodejs{
+      bottom: 10%;
+      right: 30%;
+      background-image: url('../../assets/images/node-node-js-seeklogo.com.svg');
+    }
+    & .img-js{
+      top: 5%;
+      right: 40%;
+      background-image: url('../../assets/images/js.png');
+      background-size: 50px;
+    }
+    & .img-html{
+      bottom: 5%;
+      left: 40%;
+      background-image: url('../../assets/images/html-5.png');
+      background-size: 50px;
+    }
+    & .img-css{
+      top: 15%;
+      right: 15%;
+      background-image: url('../../assets/images/css.png');
+    }
+    & .img-sass{
+      left: 5%;
+      top: 30%;
+      background-image: url('../../assets/images/sass.png');
+    }
+    & .img-circle{
+      position: absolute;
+      z-index: 0;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      border: 1px solid lightgray;
+    }
+    & .circle-2{
+      width: 700px;
+      height: 700px;
+    }
+    & .circle-3{
+      width: 1100px;
+      height: 1100px;
+    }
+    & .circle-4{
+      width: 1500px;
+      height: 1500px;
+    }
+    & .circle-5{
+      width: 2000px;
+      height: 2000px;
+    }
+    & .container-skill{
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;    
+      width: 60%;
+      & .title{
+        font-size: 3.5rem;
+        font-weight: 600;
+        color: $text-color-black;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      & .text{
+        font-size: 1rem;
+        text-align: center;
+        color: gray;
+        width: 70%;
+        line-height: 120%;
+        margin-bottom: 2rem;
+      }
+      & .skill{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 70%;
+        & .container{
+          display: flex;
+          padding: 1rem;
+          & .img{
+            height: 20px;
+            margin-right: 1rem;
+          }
+          & .text{
+            color: $text-color-black;
+            display: block;
+            width: 100%;
+            margin-bottom: 0;
+            font-size: 1;
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,151 @@
+$text-color-black: #273036;
+$text-color-blue: #0066FF;
+$text-color-darkBlue: #000b76;
+
+.header{
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  // padding: 0 2rem;
+  align-items: center;
+  height: 70px;
+  box-shadow: 1px 1px 1px lightgray;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  background-color: #fff;
+  // opacity: .3;
+  & .logo-container{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    & .img{
+      background-image: url('../../assets/images/PDPPDP.jpg');
+      width: 40px;
+      height: 40px;
+      background-position: center;
+      background-size: cover;
+      border-radius: 50%;
+    }
+    & .text{
+      font-size: 1.2rem;
+      color: #273036;
+    }
+  }
+  & .list{
+    display: flex;
+    column-gap: 40px;
+    align-items: center;
+    & .element{
+      height: 100%;
+      position: relative;
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .link{
+        text-decoration: none;
+        color: #273036;
+        transition: 0.4s;
+        cursor: pointer;
+        &:hover{
+          color: #0066FF;
+        }
+        &::before{
+          transition: 0.4s;          
+          content: "";
+          width: 0%;
+          height: 1px;
+          bottom: 0;
+          background-color: #0066FF;
+          position: absolute;
+        }
+        &:hover::before{
+          width: 100%;
+        }
+      }
+      & .active{
+        color: #0066FF;
+        &::before{
+          transition: 0.4s;          
+          content: "";
+          width: 0%;
+          height: 1px;
+          bottom: 0;
+          background-color: #0066FF;
+          position: absolute;
+          width: 100%;
+        }
+      }
+    }
+  }
+  & .logo-menu{
+    width: 50px;
+    height: 50px;
+    display: none;
+    z-index: 10;
+  }
+}
+
+.blue{
+  fill: $text-color-blue;
+}
+  
+  
+  
+.filter{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  background-color: rgba(0,0,0,0.2);
+  display: none;
+}
+
+.appear{
+  display: flex;
+}
+
+.menu-deroulant{
+  z-index: 5;
+  width: calc( 100vw);
+  height: 100vh;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  z-index: 5;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transform: translateX(-100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+  display: none;
+  transition: 0.4s;
+  & .btn-close{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+  }
+  & a {
+    text-decoration: none;
+    color: $text-color-black;
+    font-size: 2rem;
+    transition: 0.3s;
+    &:hover{
+      color: $text-color-blue;
+    }
+  }
+}
+
+.show{
+  transform: translateX(0%);
+  z-index: 10;
+}

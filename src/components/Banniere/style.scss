@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+$text-color-black: #273036;
+$text-color-blue: #0066FF;
+$text-color-darkBlue: #000b76;
+
+.banniere{
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: calc(100vh - 90px);
+    color: $text-color-black;
+    padding: 0 10rem;
+    & .img-svg{
+      width: 50%;
+      margin-top: 5rem;
+      align-self: flex-start;
+      margin-top: 5rem;
+    }
+    & .text-container{
+      width: 100%;
+      & .title{
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+      }
+      & .text{
+        font-size: 3rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+        line-height: 120%;
+      }
+    }
+    & .btn-container{
+      display: flex;
+      column-gap: 20px;
+      & .btn{
+        border: none;
+        background: white;
+        font-size: 1rem;
+        display: inline-block;
+        cursor: pointer;
+        transition: 0.6s;
+      }
+      & .btn-work{
+        padding: 1rem 2rem;
+        background-color: $text-color-blue;
+        color: white;
+        border-radius: 5px;
+        &:hover{
+          transform: scale(1.05);
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+        & .text{
+          font-size: 1rem;
+          font-weight: normal;
+        }
+        & .img{
+          width: 20px;
+          height: 20px;
+        }
+      }
+      & .btn-cv{
+        padding: 1rem 2rem;
+        color: $text-color-blue;
+        border: 1px solid $text-color-blue;
+        border-radius: 5px;
+        text-decoration: none;
+        &:hover{
+          transform: scale(1.05);
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+      }
+    }
+  }
